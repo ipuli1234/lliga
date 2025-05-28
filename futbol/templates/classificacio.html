@@ -1,0 +1,19 @@
+<!-- Aquest exemple és una llista simple
+<ol>
+    {% for equip in classificacio %}
+        <li>{{equip.1}} ({{equip.0}} punts)</li>
+    {% endfor %}
+</ol>
+-->
+<h1>classificacio</h1>
+<h2>Lliga:</h2>
+<table>
+    {% for equip in classificacio %}
+    <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{equip.1}}</td>
+            <td>{{equip.0}} punts</td>
+           
+    </tr>
+    {% endfor %}
+</table>
